@@ -87,7 +87,7 @@ export default function HomePage() {
 	const { animations: animations } = usePersistantState().get();
 
 	const today = new Date();
-	const birthday = new Date('1997-08-09');
+	const birthday = new Date('1994-08-09');
 	const age = differenceInYears(today, birthday);
 	const isBirthday = isSameDay(today, birthday) && isSameMonth(today, birthday);
 
@@ -101,13 +101,13 @@ export default function HomePage() {
 					{animations ? (
 						<Transition duration={1000}>
 							<Title>
-								Hey <Wave>👋</Wave> I'm Ben, <LineBreak />a{' '}
+								Hey <Wave>👋</Wave> I'm Brian, <LineBreak />a{' '}
 								<StyledPill>developer</StyledPill>
 							</Title>
 						</Transition>
 					) : (
 						<Title>
-							Hey <Wave>👋</Wave> I'm Ben, <LineBreak />a{' '}
+							Hey <Wave>👋</Wave> I'm Brian, <LineBreak />a{' '}
 							<StyledPill>developer</StyledPill>
 						</Title>
 					)}
